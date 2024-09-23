@@ -29,7 +29,21 @@
   transition: border-color 0.3s;
 }
 
+.input:focus {
+  border-color: rgb(158, 47, 114);
+}
+
 .button {
   padding: 10px 20px;
   cursor: pointer;
+  border: 2px solid #2c77c1;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  background-color: #005;
+  transition: background-color 0.3s;
+}
+
+.btn:hover,
+btn:focus {
+  color: rgb(110, 110, 207);
 }

@@ -33,7 +33,7 @@ const SearchBar = ({ onSubmit }) => {
             placeholder="Search images and photos"
           />
           <button type="submit" className="css.button">
-            <FontAwesomeIcon icon={faSearch} />
+            <FontAwesomeIcon icon={faSearch} className={css.btn} />
           </button>
         </form>
       </header>
