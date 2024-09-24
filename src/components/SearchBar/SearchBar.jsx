@@ -32,7 +32,7 @@ const SearchBar = ({ onSubmit }) => {
             autofocus
             placeholder="Search images and photos"
           />
-          <button type="submit" className="css.button">
+          <button type="submit" className={css.button}>
             <FontAwesomeIcon icon={faSearch} className={css.btn} />
           </button>
         </form>

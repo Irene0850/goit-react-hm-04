@@ -43,7 +43,12 @@
   transition: background-color 0.3s;
 }
 
-.btn:hover,
-btn:focus {
-  color: rgb(110, 110, 207);
+.button:hover,
+.button:focus {
+  border-color: #5f1a1a;
+  background-color: rgb(18, 138, 138);
+}
+
+.btn:hover {
+  color: rgb(11, 11, 99);
 }

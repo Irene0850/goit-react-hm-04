@@ -9,7 +9,7 @@ const ImageGallery = ({ images, setSelectedImage }) => {
           <ImageCard
             src={image.urls.small}
             alt={image.alt_description}
-            onClick={() => setSelectedImage(image.urls.full)}
+            onClick={() => setSelectedImage(image)}
             author={image.user.name}
             likes={image.likes}
             description={image.description || image.alt_description}
@@ -19,22 +19,5 @@ const ImageGallery = ({ images, setSelectedImage }) => {
     </ul>
   );
 };
-
-// // if (images.length === 0) {
-// //   return null;
-// // }
-// // return (
-// //   <ul className={css.gallery}>
-// //     {images.map((image) => {
-// //       <li
-// //         key={image.id}
-// //         className={css.galleryitem}
-// //         onClick={() => setSelectedImage(image)}
-// //       >
-// //         <ImageCard src={image.urls.small} alt={image.alt_description} />
-// //       </li>;
-// //     })}
-// //   </ul>
-// );
 
 export default ImageGallery;
